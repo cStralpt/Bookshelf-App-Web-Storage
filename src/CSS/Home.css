@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 478px;
+  height: 100%;
+  background-color: #f7f7f7;
+  position: relative;
+}
+footer button {
+  color: #ffde00;
+  cursor: pointer;
+}
+footer button:hover {
+  color: #ff1e00;
+}
+footer {
+  position: sticky;
+  max-width: 478px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+  gap: 40px;
+  padding: 10px 10px 0 10px;
+  border-top: 5px solid #ffde00;
+  border-style: dotted;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 5px solid #181818;
+  border-style: dotted;
+  background-color: #ff1e00;
+  border-radius: 20px;
+  font-size: 2em;
+  gap: 5px;
+  margin: 2rem;
+}
+form section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form section input {
+  padding: 0.5rem;
+  border: none;
+  background-color: #ffde00;
+  border: 5px solid #181818;
+  border-bottom-style: dotted;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+form > button {
+  margin-left: auto;
+  cursor: pointer;
+  padding: 2px;
+  border: 5px solid #181818;
+  border-bottom-style: dotted;
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  transition: all 0.5s ease-in-out;
+}
+form > button:hover {
+  border-bottom-style: none;
+  border-top-style: dotted;
+  transition: all 0.2s ease-in;
+  border-color: #ffde00;
+}
+form > #checkbox-container > #checkbox {
+  padding: 10px;
+  accent-color: #ffde00;
+}
+#checkbox-container {
+  display: flex;
+  font-size: 1rem;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+#checkbox-container div{
+  display: flex;
+  gap: 5px;
+}
+.list-book-container {
+  padding: 2rem;
+  border: 5px solid #181818;
+  border-style: dotted;
+  background-color: #ff1e00;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  margin: 2rem;
+  flex: 1;
+}
+
+.list-book-container > ul {
+  padding: 2rem;
+  list-style: circle;
+  font-variant-ligatures: additional-ligatures;
+}
+.book-list {
+  background-color: #ffde00;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 5px solid #181818;
+  border-style: dotted;
+  font-size: 0.8em;
+}
+.book-list > div > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 5px;
+}
+.book-list button {
+  background-color: #ff1e00;
+  padding: 0.2em 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.book-list button:hover {
+  background-color: #ffde00;
+
+  border: 5px solid #181818;
+  border-style: dotted;
+}
+.complete-false {
+  opacity: 0.2;
+}
+span {
+  display: flex;
+  place-items: center;
+  width: min-content;
+}
+.edit-window-container {
+  display: flex;
+  position: absolute;
+  top: 20rem;
+  background-color: #ffde00;
+  left: 0;
+  right: 0;
+  margin: 1rem;
+  padding: 1em;
+  border-radius: 10px;
+  border: 5px solid #181818;
+  border-style: dotted;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.find-book-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.find-book-container input {
+  flex-grow: 1;
+  padding: 5px;
+  background-color: #ff1e00;
+  border: 5px solid #181818;
+  border-radius: 10px;
+  border-style: dotted;
+  outline: none;
+  font-size: 1.5em;
+  width: 100%;
+}
+.find-book-container button {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.find-book-window-close-btn {
+  position: absolute;
+  top: -42px;
+  right: -35px;
+  cursor: pointer;
+  background-color: #ff1e00;
+  border: 5px solid #181818;
+  border-radius: 100px;
+  border-style: dotted;
+}
+h5{
+  font-size: .9em;
+  text-align: center;
+}
