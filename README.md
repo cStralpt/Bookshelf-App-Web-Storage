@@ -1,3 +1,5 @@
 # Bookshelf-App-Web-Storage
-add or remove book from shelf and move book between shelfs
+<div>
+<h6>App Preview</h6>
 <img src="bookshelf-ui.png" width="300px" />
+ </div>
